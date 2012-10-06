@@ -1,21 +1,62 @@
+body{
+	background-image:url('../images/bats.gif');
+	width: 850px;
+	border: 3px solid black;
+}
 /* Indent header text */
+body, h1, h2, p{
+	padding:0px;
+}
+h1, h2, p{
+	margin:0px;
+}
 h2{
 	font-size: 125%;
 }
-
+header{
+	background: -webkit-linear-gradient(45deg, white 0%, orange 75%, black 100%);
+	background-color: black;
+	border-bottom: 2px solid black;	
+}
 header h1 {
 	font-size: 250%;
+}
+header img{
+	padding-right: 15px;
+}
+hgroup{
+	padding 15px;
+}
+section {
+	background-color: white;
+	box-shadow: 0px 9px 18px red;
+	padding: 20px 60px 30px 0px;
+	margin: 0 auto;
 }
 
 section h1 {
 	font-size: 140%;
+	margin-bottom: .5em;
 }
 
+section h2 {
+	margin: .8em 0em .5em 0em;
+}
+
+section p{
+	margin-top: .5em;
+}
 section h1::first-letter {
 	font-size: 250%;
 }
 /*center footer text */
-/*make footer font smai*/
+/*make footer font small*/
+footer{
+	background: -webkit-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+	background-color: orange;
+	padding: 15px;
+	border-top: 2px solid black;
+}
 footer p{
 	font-size: 90%;	
 }
@@ -34,4 +75,5 @@ strong{
 	15px 15px 0px blue,
 	18px 18px 0px indigo,
 	21px 21px 0px violet;
+	background-color: lightblue;
 }
