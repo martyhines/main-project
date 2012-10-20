@@ -78,3 +78,6 @@ strong{
 	background-color: lightblue;
 	border-radius:25px;
 }
+header img{
+	float:left;
+}

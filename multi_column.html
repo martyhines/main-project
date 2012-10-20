@@ -8,7 +8,17 @@
 <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="css/nav.css" />
 </head>
-
+<style>
+article{
+	-webkit-column-count:3;
+	-webkit-column-gap: 25px;
+	-webkit-column-rule:5px dotted red;
+}
+article h2{
+	text-align: center;
+	-webkit-column-span:all;
+}
+</style>
 <body>
 	<header>
 		<img src="images/Homer_Rock_and_Roll.jpg" alt="Homer" width="100"
@@ -21,7 +31,7 @@
 			<h2>Rock On!</h2>
 		</hgroup>
 		<nav>
-		
+
 			<ul id="main">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="home.html">Layout</a></li>
@@ -32,12 +42,11 @@
 				<li><a href="product.php">Products</a></li>
 				<li><a href="geolocation.html">Stuff</a></li>
 				<li><a href="multi_column.html">Layout</a>
-				<ul>
-				<li><a href="two_column_left.html">2 Column Float Left</a></li>
-				<li><a href="two_column_right.html">2 Column Float Right</a></li>
-				<li><a href="three_column.html">3 Column Float</a></li>
-				</ul>
-				</li>
+					<ul>
+						<li><a href="two_column_left.html">2 Column Float Left</a></li>
+						<li><a href="two_column_right.html">2 Column Float Right</a></li>
+						<li><a href="three_column.html">2 Column Float Left</a></li>
+					</ul></li>
 			</ul>
 		</nav>
 	</header>
@@ -47,33 +56,36 @@
 			<h1>Everything Is On Sale for Halloween</h1>
 
 		</header>
-		<article>
+		<article id="content">
 
-			<h2>Home Page</h2>
+			<h2>CSS3 MultiColumn Layout</h2>
 
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-				diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-				erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-				tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+			<p>
+				<strong>Main content</strong> Lorem ipsum dolor sit amet,
+
+				consectetuer adipiscing elit, sed diam nonummy nibh euismod
+				tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+				enim ad minim veniam, quis nostrud exerci tation ullamcorper
+				suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis
+				autem vel eum iriure dolor in hendrerit in vulputate velit esse
+				molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+				vero eros et accumsan et iusto odio dignissim qui blandit praesent
+				luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+			</p>
+
+			<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation
+
+				ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
 				consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
 				velit esse molestie consequat, vel illum dolore eu feugiat nulla
 				facilisis at vero eros et accumsan et iusto odio dignissim qui
 				blandit praesent luptatum zzril delenit augue duis dolore te feugait
-				nulla facilisi.</p>
-			<p>
-				Click on the <A
-					href="mailto:homer@homermusic.com&Subject=Hello%20Homer">email
-					link</a> to at vero eros et accumsan et iusto odio dignissim qui
-				blandit praesent luptatum zzril delenit augue duis dolor.
-			</p>
+				nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing
+				elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+				magna aliquam erat volutpat.</p>
 
-			<h2>Our guarantee</h2>
-
-			<p>
-				If you aren't completely satisfied with everything you buy from my
-				site, you can keep it.<strong> No questions asked!</strong>
-			</p>
 		</article>
+
 	</section>
 	<footer>
 		<p>&copy; 2012 Homer J. Simpson</p>
